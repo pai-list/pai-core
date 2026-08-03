@@ -1,0 +1,33 @@
+{
+  "name": "pai-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PAI Core - Shared infrastructure packages for PAI Universe",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "dev:core": "turbo run dev --filter=@pai/core",
+    "dev:sdk": "turbo run dev --filter=@pai/sdk",
+    "dev:crypto": "turbo run dev --filter=@pai/crypto",
+    "dev:identity": "turbo run dev --filter=@pai/identity",
+    "dev:verify": "turbo run dev --filter=@pai/verify",
+    "dev:wallet": "turbo run dev --filter=@pai/wallet"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
