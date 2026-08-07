@@ -22,9 +22,9 @@
   "author": "PAI Universe",
   "license": "MIT",
   "dependencies": {
-    "@pai/crypto": "workspace:*",
+    "@axiomid/crypto": "workspace:*",
     "@pai/identity": "workspace:*",
-    "@pai/sdk": "workspace:*"
+    "@axiomid/sdk": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
